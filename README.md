@@ -133,7 +133,7 @@ The notebooks rely on standard Python libraries:
 
 In addition to the empirical machine learning analysis, the repository also contains a theoretical report:
 
-ML_Brain-data_description.pdf
+ML_Brain-data description.pdf
 
 The document provides a deeper methodological discussion of machine learning techniques applied to high-dimensional neuroimaging data and extends the project beyond the implemented models.
 
