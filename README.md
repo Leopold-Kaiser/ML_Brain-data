@@ -129,7 +129,63 @@ The notebooks rely on standard Python libraries:
 > scikit-learn  
 > statsmodels
 
+# Theoretical Analysis
 
-# Reproducibility
+In addition to the empirical machine learning analysis, the repository also contains a theoretical report:
 
-All necessary data files and scripts are included in this repository to ensure full reproducibility of the analysis.
+ML_Brain-data_description.pdf
+
+The document provides a deeper methodological discussion of machine learning techniques applied to high-dimensional neuroimaging data and extends the project beyond the implemented models.
+
+Theoretical topics covered include:
+
+
+Modeling Panel Data
+---
+
+The report discusses how longitudinal neuroimaging data can be modeled while preserving the panel structure of repeated brain observations. Different strategies for adapting machine learning methods to panel data are explored.
+
+
+Semi-Supervised Support Vector Machines (S3VMs)
+---
+
+Semi-supervised learning approaches are discussed to address the common problem of limited labeled medical data. S3VMs incorporate unlabeled observations to improve generalization and decision boundary placement.
+
+
+Model Interpretability with SHAP
+---
+
+The report introduces SHAP (Shapley Additive Explanations) to interpret machine learning predictions.
+
+> local explanations: feature contributions for individual predictions  
+> global explanations: overall feature importance across the dataset  
+
+
+Unsupervised Learning
+---
+
+Theoretical clustering approaches are discussed, including constrained clustering methods that incorporate prior knowledge.
+
+Evaluation metrics for clustering quality are also reviewed, including:
+
+> Silhouette Score  
+> Adjusted Rand Index  
+> Calinski–Harabasz Index
+
+
+Dimensionality Reduction
+---
+
+Several dimensionality reduction techniques relevant for high-dimensional neuroimaging data are compared:
+
+> Principal Component Analysis (PCA)  
+> Independent Component Analysis (ICA)  
+> Multidimensional Scaling (MDS)
+
+Their advantages and limitations for brain connectivity analysis are discussed.
+
+
+Visualizing Dynamic Data
+---
+
+Methods for visualizing temporal dynamics in neuroimaging data are explored by applying dimensionality reduction to time-windowed features, allowing trajectories of brain activity patterns to be visualized.
